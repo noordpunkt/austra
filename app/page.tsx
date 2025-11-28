@@ -1,121 +1,84 @@
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
+    <div className="min-h-screen bg-white dark:bg-black">
       {/* Navigation */}
       <nav className="container mx-auto px-6 py-6">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold text-slate-900 dark:text-white">
+          <div className="text-xl font-semibold text-black dark:text-white">
             Austra
           </div>
-          <div className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors">
-              Features
+          <div className="flex items-center space-x-6">
+            <a href="#" className="text-black dark:text-white hover:opacity-70 transition-opacity">
+              Explore
             </a>
-            <a href="#about" className="text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors">
-              About
-            </a>
-            <a href="#contact" className="text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors">
-              Contact
-            </a>
+            <button className="px-4 py-2 text-black dark:text-white hover:opacity-70 transition-opacity">
+              Sign In
+            </button>
           </div>
-          <button className="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors font-medium">
-            Get Started
-          </button>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <main className="container mx-auto px-6 py-20">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-7xl font-bold text-slate-900 dark:text-white mb-6 leading-tight">
-            Welcome to{" "}
-            <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-              Austra
-            </span>
-          </h1>
-          <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
-            Build amazing experiences with modern technology. Fast, reliable, and beautiful.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-4 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
-              Start Building
-            </button>
-            <button className="px-8 py-4 bg-white dark:bg-slate-800 text-slate-900 dark:text-white rounded-lg border-2 border-slate-300 dark:border-slate-600 hover:border-indigo-600 dark:hover:border-indigo-500 transition-colors font-semibold text-lg">
-              Learn More
+      <main className="container mx-auto px-6 py-12 md:py-20">
+        <div className="grid md:grid-cols-2 gap-12 items-center min-h-[70vh]">
+          {/* Left Content */}
+          <div className="space-y-8">
+            <div className="space-y-4">
+              <h1 className="text-5xl md:text-7xl font-bold text-black dark:text-white leading-tight">
+                Delightful
+                <br />
+                experiences
+              </h1>
+              <p className="text-xl md:text-2xl text-black dark:text-white font-light">
+                start here.
+              </p>
+            </div>
+            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-lg">
+              Set up your project, invite collaborators and build amazing things. Create something memorable today.
+            </p>
+            <button className="px-8 py-4 bg-black dark:bg-white text-white dark:text-black rounded-lg hover:opacity-90 transition-opacity font-medium text-lg">
+              Create Your First Project
             </button>
           </div>
-        </div>
 
-        {/* Features Section */}
-        <div id="features" className="mt-32 max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-slate-900 dark:text-white mb-16">
-            Features
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-              <div className="w-12 h-12 bg-indigo-100 dark:bg-indigo-900 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+          {/* Right Image Placeholder */}
+          <div className="hidden md:block">
+            <div className="w-full h-[500px] bg-gray-100 dark:bg-gray-900 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300 dark:border-gray-700">
+              <div className="text-center space-y-2">
+                <svg className="w-16 h-16 mx-auto text-gray-400 dark:text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
+                <p className="text-gray-500 dark:text-gray-500 text-sm">Image Placeholder</p>
               </div>
-              <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">Lightning Fast</h3>
-              <p className="text-slate-600 dark:text-slate-300">
-                Built with Next.js for optimal performance and speed.
-              </p>
-            </div>
-            <div className="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-              <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">Beautiful Design</h3>
-              <p className="text-slate-600 dark:text-slate-300">
-                Styled with Tailwind CSS for a modern, responsive design.
-              </p>
-            </div>
-            <div className="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-              <div className="w-12 h-12 bg-pink-100 dark:bg-pink-900 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-pink-600 dark:text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">Type Safe</h3>
-              <p className="text-slate-600 dark:text-slate-300">
-                Written in TypeScript for better developer experience.
-              </p>
             </div>
           </div>
-        </div>
-
-        {/* CTA Section */}
-        <div className="mt-32 max-w-4xl mx-auto text-center bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl p-12 text-white">
-          <h2 className="text-4xl font-bold mb-4">Ready to get started?</h2>
-          <p className="text-xl mb-8 text-indigo-100">
-            Join thousands of developers building amazing things.
-          </p>
-          <button className="px-8 py-4 bg-white text-indigo-600 rounded-lg hover:bg-indigo-50 transition-colors font-semibold text-lg shadow-lg">
-            Get Started Today
-          </button>
         </div>
       </main>
 
       {/* Footer */}
-      <footer className="mt-20 border-t border-slate-200 dark:border-slate-700">
+      <footer className="border-t border-gray-200 dark:border-gray-800 mt-20">
         <div className="container mx-auto px-6 py-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="text-slate-600 dark:text-slate-400 mb-4 md:mb-0">
-              © 2024 Austra. All rights reserved.
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div className="flex space-x-6 text-sm">
+              <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">
+                Discover
+              </a>
+              <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">
+                Pricing
+              </a>
+              <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">
+                Help
+              </a>
             </div>
-            <div className="flex space-x-6">
-              <a href="#" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">
-                Twitter
+            <div className="flex space-x-6 text-sm">
+              <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">
+                Terms
               </a>
-              <a href="#" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">
-                GitHub
+              <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">
+                Privacy
               </a>
-              <a href="#" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">
-                LinkedIn
+              <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">
+                Security
               </a>
             </div>
           </div>

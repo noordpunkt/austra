@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Austra - Modern Landing Page",
-  description: "A beautiful, modern landing page built with Next.js, TypeScript, and Tailwind CSS",
+  title: "Austra - Delightful experiences",
+  description: "Set up your project, invite collaborators and build amazing things. Create something memorable today.",
 };
 
 export default function RootLayout({
